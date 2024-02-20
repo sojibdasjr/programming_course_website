@@ -28,7 +28,7 @@ const SingleCourse = ({ course, handleAddToCart }) => {
       </div>
       <button
         onClick={() => handleAddToCart(course)}
-        className="bg-blue-600  rounded-lg  flex justify-center items-center  py-2 w-11/12 my-2 mx-auto  text-white text-xl focus:bg-blue-800"
+        className="bg-slate-600  rounded-lg  flex justify-center items-center  py-2 w-11/12 my-2 mx-auto  text-white text-xl focus:bg-slate-800"
       >
         Select
       </button>
