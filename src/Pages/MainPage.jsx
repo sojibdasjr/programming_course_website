@@ -22,13 +22,11 @@ const MainPage = () => {
         setPrice(neWPrice);
         // course added successfully
         toast.success(`  ${course.title} " Added to Cart Succssfully"`);
+        const cartCourse = [...selectData, course];
+        setSelectData(cartCourse);
       } else {
         toast.error("Your credit is over ");
       }
-
-      //copy all data
-      const cartCourse = [...selectData, course];
-      setSelectData(cartCourse);
     } else {
       toast.error("Course is Already existing");
     }
