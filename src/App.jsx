@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <h1 className="bg-slate-300 py-6 text-center md:text-5xl text-2xl font-bold">
-        Our Programming Course
+        Our Course
       </h1>
 
       <MainPage />
