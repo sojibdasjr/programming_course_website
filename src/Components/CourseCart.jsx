@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-const CourseCart = ({ selectData }) => {
+const CourseCart = ({ selectData, credit, price }) => {
   return (
-    <div className=" md:w-1/4  border ps-2 ">
-      <h1 className="font-bold text-slate-700 text-2xl ">
-        Credit Hour Remaining:
+    <div className=" md:w-1/4  border ps-2 sticky  ">
+      <h1 className="font-bold text-black-400 text-2xl  ">
+        Credit Hour Remaining: {credit <= 20 && 20 - credit}
       </h1>
       <hr className="my-2" />
       <h1 className="text-2xl font-bold mb-4">Course Name</h1>
@@ -14,9 +14,9 @@ const CourseCart = ({ selectData }) => {
         ))}
       </div>
       <hr className="my-4" />
-      <h1>Total Creadit Hour : </h1>
+      <h1>Total Creadit Hour : {credit} </h1>
       <hr className="my-4" />
-      <h1>Total Price: $ </h1>
+      <h1>Total Price: $ {price} </h1>
     </div>
   );
 };
