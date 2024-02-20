@@ -1,10 +1,10 @@
 # Programming Course
 
-Project Title: Programming Course - A Course Management Platform (https://proramming-course.netlify.app/)
+Project Title: ProgrammingHub - A Course Management Platform - https://proramming-course.netlify.app
 
 Project Description:
 
-CourseHub is a web application designed to facilitate course management for students and instructors. The platform allows users to browse available courses, enroll in them, and manage their course credits. Additionally, CourseHub provides instructors with tools to create and manage courses, track student progress, and assign credits.
+ProgrammingHub is a web application designed to facilitate course management for students and instructors. The platform allows users to browse available courses, enroll in them, and manage their course credits. Additionally, CourseHub provides instructors with tools to create and manage courses, track student progress, and assign credits.
 
 Key Features:
 
