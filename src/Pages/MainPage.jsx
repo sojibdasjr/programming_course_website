@@ -20,10 +20,11 @@ const MainPage = () => {
         //upadting price
         const neWPrice = price + course.price;
         setPrice(neWPrice);
+        // course added successfully
+        toast.success(`  ${course.title} " Added to Cart Succssfully"`);
       } else {
         toast.error("Your credit is over ");
       }
-      //price
 
       //copy all data
       const cartCourse = [...selectData, course];
@@ -35,7 +36,14 @@ const MainPage = () => {
   return (
     <div className="md:flex gap-4 max-w-7xl mx-auto mt-4 px-2">
       <OurCourses handleAddToCart={handleAddToCart} />
-      <CourseCart selectData={selectData} credit={credit} price={price} />
+      <CourseCart
+        selectData={selectData}
+        credit={credit}
+        price={price}
+        setSelectData={setSelectData}
+        setCredit={setCredit}
+        setPrice={setPrice}
+      />
     </div>
   );
 };
